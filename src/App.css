@@ -1,41 +1,94 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.bill-amount {
+  padding: 3rem 0 2rem;
+  margin: 0 3rem;
+}
+
+.input-group {
+  color: #757575;
+  display: flex;
+  font-size: var(--input-size);
+  background: white;
+  border: transparent;
+  border-radius: 999rem;
+  padding: 1rem;
+}
+
+.input-group-text {
+  position: relative;
+  left: 1rem;
+}
+
+.input-group:has(input:not([value=""])) {
+  color: var(--text-color);
+}
+
+label,
+.label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--label-font-size);
+  text-transform: uppercase;
+  font-weight: 500;
+  display: block;
   text-align: center;
+  padding-bottom: 1rem;
+  margin: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#bill {
+  background: transparent;
+  color: var(--text-color);
+  caret-color: var(--text-color);
+  border: none;
+  font-size: var(--input-size);
+  width: 100%;
+  min-width: 2em;
+  outline: 0;
+  padding: 0 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.tip-percent {
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
 }
 
-.card {
-  padding: 2em;
+.tip-percent input {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.read-the-docs {
-  color: #888;
+.tip-percent input + label {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.tip-percent input:checked + label {
+  background: white;
+  border-radius: 1rem;
+  color: var(--text-color);
+  padding: 1rem;
+}
+
+.summary {
+  background-color: rgb(226, 107, 19);
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem 3rem;
+}
+
+.summary p {
+  font-size: var(--input-size);
+  margin: 0;
+}
+
+.summary span {
+  color: rgba(255, 255, 255, 0.9);
+  display: block;
+  font-size: var(--label-font-size);
+  text-transform: uppercase;
 }
