@@ -16,7 +16,6 @@ function App() {
     setPercent(value);
   }
   const tipPercent = Number(percent.slice(0, percent.length - 1)) / 100;
-  console.log({ tipPercent });
   const tipAmount = Number(billAmount) * tipPercent;
   const tipAmountFormatted = tipAmount.toLocaleString("en-US", {
     style: "currency",
@@ -37,8 +36,8 @@ function App() {
             type="text"
             id="bill"
             aria-describedby="hint"
-            inputMode="numeric"
-            pattern="[0-9.]*"
+            inputMode="decimal"
+            pattern="\d+(\.\d*)?"
             value={billAmount}
             onChange={changeHandler}
             placeholder="0.00"
