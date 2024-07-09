@@ -38,7 +38,7 @@ function App() {
             id="bill"
             aria-describedby="hint"
             inputMode="numeric"
-            pattern="[0-9]*"
+            pattern="[0-9.]*"
             value={billAmount}
             onChange={changeHandler}
             placeholder="0.00"
