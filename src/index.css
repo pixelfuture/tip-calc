@@ -60,3 +60,8 @@ svg {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+#root {
+  max-width: 480px;
+  margin: 0 auto;
+}
