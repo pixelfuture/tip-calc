@@ -1,10 +1,10 @@
 :root {
-  --label-font-size: 1.5rem;
+  --label-font-size: 1.25rem;
   --text-color: #333;
   --input-size: 2rem;
   --input-border: 10px solid rgba(255, 255, 255, 0.5);
   --input-border-focus: 10px solid rgba(255, 255, 255, 0.8);
-  --dark-green: rgb(31 122 83);
+  --bg-gradient: linear-gradient(#358437, #51ad44);
 }
 
 *,
@@ -13,11 +13,14 @@
   box-sizing: border-box;
 }
 
+html {
+  background: var(--bg-gradient);
+}
+
 body {
   margin: unset;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--dark-green);
   line-height: 1.5;
 }
 

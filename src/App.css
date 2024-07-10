@@ -73,7 +73,7 @@ label,
 }
 
 .summary {
-  background-color: rgb(226, 107, 19);
+  background-color: rgba(26, 26, 19, 0.15);
   border-radius: 1rem;
   color: white;
   text-align: center;
